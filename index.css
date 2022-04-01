@@ -50,11 +50,12 @@ li {
 
 .results {
     text-align: center;
-    padding: 30px;
+    padding: 60px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     font-size: 24px;
+    font-weight: bold;
 }
 
 .results .results-image {
