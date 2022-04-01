@@ -220,6 +220,7 @@
     <meta property="og:site_name" content="Tech Twitter Purity Test by Startup Search"/>
 </head>
 <body>
+<div id="entry-screen">
 <div class="header">
     <h1>Tech Twitter Purity Test by Startup Search</h1>
     <div class="description">
@@ -351,15 +352,24 @@
         <button type="button" onclick="calculateScore()">Calculate my score</button>
     </form>
 </div>
+</div>
+<div class="results" id="results" style="display: none;">
+Your score: <span id="score"></span>
+</div>
 <script>
     const checkboxes = document.getElementsByClassName("question-checkbox")
+    const entryScreen = document.getElementById("entry-screen")
+    const results = document.getElementById("results")
+    const score = document.getElementById("score")
     function calculateScore() {
         let count = 100
         for (let i = 0; i < 100; i++) {
             if (checkboxes[i].checked)
                 count--
         }
-        alert(count)
+        score.innerText = count.toString()
+        entryScreen.style.display = "none"
+        results.style.display = "block"
     }
 </script>
 </body>
