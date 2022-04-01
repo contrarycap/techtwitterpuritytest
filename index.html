@@ -376,13 +376,25 @@
     <span id="score"></span>
     <br><br>
     <a href="https://twitter.com/intent/tweet?text=&via=startupsearch&url=https%3A%2F%2Ftechtwitterpuritytest.com" class="twitter-button" id="results-twitter-button" target="_blank"><img src="img/twitter.svg" alt=""> Share on Twitter</a>
-    <div class="divider"></div>
-    <div class="cta-copy">
-        Looking for a job or internship in tech? Subscribe to Startup Search, a weekly newsletter curating...
-    </div>
 </div>
-<div class="email-capture-popup-bg">
-    <div class="email-capture"
+<div class="email-capture-popup-bg bg-overlay hidden" id="email-capture-overlay" onclick="clickOnOverlay()">
+    <div class="email-capture overlay__container">
+        <div class="dismiss" onclick="hideOverlay()">&#x2716;</div>
+        <div class="copy">
+            <b>What to stay on the pulse of all things startups?</b><br>
+            Subscribe to our newsletter and get 20+ startup jobs<br>
+            and resources in your inbox weekly.
+        </div>
+        <br>
+        <div class="cta">
+            <form onsubmit="submitForm()">
+                <label>
+                    <input type="email" required placeholder="Enter your email here" id="email-capture-input"/>
+                </label>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
 </div>
 <script>
     sendAmplitudeEvent("PageView - Purity Test")
@@ -391,6 +403,8 @@
     const results = document.getElementById("results")
     const score = document.getElementById("score")
     const resultsTwitterButton = document.getElementById("results-twitter-button")
+    const emailCaptureOverlay = document.getElementById("email-capture-overlay")
+    const emailCaptureInput = document.getElementById("email-capture-input")
 
     function calculateScore() {
         let count = 100
@@ -406,6 +420,24 @@
             encodeURI("My Tech Twitter Purity Test score is " + count + ". Should I be proud or embarrassed? @startupsearch")
         entryScreen.style.display = "none"
         results.style.display = "block"
+        emailCaptureOverlay.classList.remove("hidden")
+    }
+
+    function submitForm() {
+        this.event.preventDefault()
+        sendAmplitudeEvent("Submit Email - Purity Test", {
+            "email": emailCaptureInput.value
+        })
+        emailCaptureOverlay.classList.add("hidden")
+    }
+
+    function hideOverlay() {
+        emailCaptureOverlay.classList.add("hidden")
+    }
+
+    function clickOnOverlay() {
+        if (this.event.target === emailCaptureOverlay)
+            emailCaptureOverlay.classList.add("hidden")
     }
 </script>
 </body>
