@@ -1,3 +1,7 @@
+html {
+    height: 100%;
+}
+
 body {
     font-family: "Work Sans", sans-serif;
     color: #0D0E29;
@@ -32,5 +36,11 @@ li {
 }
 
 .results {
-    height: 100%;
+    text-align: center;
+    padding: 30px;
+}
+
+#score {
+    color: red;
+    font-size: 36px;
 }
