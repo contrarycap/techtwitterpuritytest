@@ -222,131 +222,145 @@
 <body>
 <div class="header">
     <h1>Tech Twitter Purity Test by Startup Search</h1>
+    <div class="description">
     <a href="https://startupsearch.com" target="_blank">Startup Search</a>’s Tech Twitter Purity Test was created in celebration of all the debauchery pulled by aspiring tech
     Tweeters.
-    <br>
+    <br><br>
     It’s a voluntary opportunity for early tech startup professionals to bond, as well as track the maturation of their
     experiences throughout their thought leader journey.
-    <br>
+    <br><br>
     <b>NOTE: The Tech Twitter Purity Test is not a bucket list. Completion of all items on this test will likely result
         in being blocked by <a href="https://twitter.com/pmarca" target="_blank">@pmarca</a>.</b>
+    </div>
 </div>
 <div class="questions">
     <form>
-        <ul>
-            <li><label><input type="checkbox"/> Tagged a company that you previously worked at in your bio?</label></li>
-            Tagged the company that you currently work at in your bio?
-            Linked a Substack, Beacons, Mirror.xyz, or personal blog in your profile?
-            Pinned your most liked tweet to your profile?
-            Changed your name to an ENS domain?
-            Changed your name to “____ is in ____”?
-            Changed your PFP to an NFT?
-            Have a hexagon PFP?
-            ( , )?
-            <li><label><input type="checkbox"/>Followed @elonmusk?</label></li>
-            <li><label><input type="checkbox"/>Followed @jack?</label></li>
-            <li><label><input type="checkbox"/>Followed @sama?</label></li>
-            <li><label><input type="checkbox"/>Followed @APompliano?</label></li>
-            <li><label><input type="checkbox"/>Tweet weekly?</label></li>
-            <li><label><input type="checkbox"/>Tweet daily?</label></li>
-            <li><label><input type="checkbox"/>Scheduled a tweet?</label></li>
-            <li><label><input type="checkbox"/>Schedule tweets weekly?</label></li>
-            <li><label><input type="checkbox"/>Analyzed your engagement on analytics.twitter.com?</label></li>
-            <li><label><input type="checkbox"/>Tweeted a thread 🧵?</label></li>
-            <li><label><input type="checkbox"/>1/ Tweeted 🚩🚩🚩?</label></li>
-            <li><label><input type="checkbox"/>2/ Tweeted your Wordle?</label></li>
-            <li><label><input type="checkbox"/>3/ Tweeted “I’m gonna be in ______ who should I meet?”</label></li>
-            <li><label><input type="checkbox"/>4/ Tweeted “Who are the best/top _____ in _____?”</label></li>
-            <li><label><input type="checkbox"/>5/ Tweeted “gm”?</label></li>
-            <li><label><input type="checkbox"/>Have more than 1k followers?</label></li>
-            <li><label><input type="checkbox"/>Have more than 10k followers?</label></li>
-            <li><label><input type="checkbox"/>Have more than 100k followers?</label></li>
-            <li><label><input type="checkbox"/>Have more than 500k followers?</label></li>
-            <li><label><input type="checkbox"/>Had your tweet <b>liked</b> by someone with more than 100k
+        <ul id="question-list">
+            <li><label><input type="checkbox" class="question-checkbox"/>Tagged a company that you previously worked at in your bio?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Tagged the company that you currently work at in your bio?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Linked a Substack, Beacons, Mirror.xyz, or personal blog in your profile?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Pinned your most liked tweet to your profile?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Changed your name to an ENS domain?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Changed your name to “____ is in ____”?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Changed your PFP to an NFT?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Have a hexagon PFP?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>( , )?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Followed <a href="https://twitter.com/elonmusk" target="_blank">@elonmusk</a>?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Followed <a href="https://twitter.com/jack" target="_blank">@jack</a>?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Followed <a href="https://twitter.com/sama" target="_blank">@sama</a>?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Followed <a href="https://twitter.com/APompliano" target="_blank">@APompliano</a>?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Tweet weekly?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Tweet daily?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Scheduled a tweet?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Schedule tweets weekly?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Analyzed your engagement on analytics.twitter.com?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Tweeted a thread 🧵?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>1/ Tweeted 🚩🚩🚩?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>2/ Tweeted your Wordle?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>3/ Tweeted “I’m gonna be in ______ who should I meet?”</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>4/ Tweeted “Who are the best/top _____ in _____?”</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>5/ Tweeted “gm”?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Have more than 1k followers?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Have more than 10k followers?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Have more than 100k followers?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Have more than 500k followers?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Had your tweet <b>liked</b> by someone with more than 100k
                 followers?</label></li>
-            <li><label><input type="checkbox"/>Had your tweet <b>liked</b> by someone with more than 1M followers?</label>
+            <li><label><input type="checkbox" class="question-checkbox"/>Had your tweet <b>liked</b> by someone with more than 1M followers?</label>
             </li>
-            <li><label><input type="checkbox"/>Had your tweet <b>retweeted</b> by someone with more than 100k
+            <li><label><input type="checkbox" class="question-checkbox"/>Had your tweet <b>retweeted</b> by someone with more than 100k
                 followers?</label></li>
-            <li><label><input type="checkbox"/>Had your tweet <b>retweeted</b> by someone with more than 1M
+            <li><label><input type="checkbox" class="question-checkbox"/>Had your tweet <b>retweeted</b> by someone with more than 1M
                 followers?</label></li>
-            <li><label><input type="checkbox"/>Had someone with more than 100k followers <b>reply</b> to you?</label></li>
-            <li><label><input type="checkbox"/>Had someone with more than 1M followers <b>reply</b> to you?</label></li>
-            <li><label><input type="checkbox"/>Had someone with more than 100k followers <b>follow</b> you?</label></li>
-            <li><label><input type="checkbox"/>Had someone with more than 1M followers <b>follow</b> you?</label></li>
-            <li><label><input type="checkbox"/>Asked for book recommendations on Twitter?</label></li>
-            <li><label><input type="checkbox"/>Asked for podcast recommendations on Twitter?</label></li>
-            <li><label><input type="checkbox"/>Use a tweet bookmarking bot?</label></li>
-            <li><label><input type="checkbox"/>Subscribed to a newsletter from Twitter?</label></li>
-            <li><label><input type="checkbox"/>Followed @pmarca?</label></li>
-            <li><label><input type="checkbox"/>Followed @zebulgar?</label></li>
-            <li><label><input type="checkbox"/>Followed @paulg?</label></li>
-            <li><label><input type="checkbox"/>Followed @packyM?</label></li>
-            <li><label><input type="checkbox"/>Followed @balajis?</label></li>
-            <li><label><input type="checkbox"/>Joined a DAO through Twitter?</label></li>
-            <li><label><input type="checkbox"/>Met someone IRL from Twitter?</label></li>
-            <li><label><input type="checkbox"/>Went to an IRL event you found on Twitter?</label></li>
-            <li><label><input type="checkbox"/>Tweeted a photo of an IRL gathering?</label></li>
-            <li><label><input type="checkbox"/>Tweeted about Miami Hack Week?</label></li>
-            <li><label><input type="checkbox"/>Tweeted about ETH Denver?</label></li>
-            <li><label><input type="checkbox"/>Tweeted about NFT LA?</label></li>
-            <li><label><input type="checkbox"/>Dropped your ENS on an airdrop Tweet?</label></li>
-            <li><label><input type="checkbox"/>Received an NFT from an airdrop Tweet?</label></li>
-            <li><label><input type="checkbox"/>Part of a Twitter community?</label></li>
-            <li><label><input type="checkbox"/>Started a Twitter community?</label></li>
-            <li><label><input type="checkbox"/>Created a Twitter list?</label></li>
-            <li><label><input type="checkbox"/>Been added to a Twitter list?</label></li>
-            <li><label><input type="checkbox"/>Been added to 5+ Twitter lists?</label></li>
-            <li><label><input type="checkbox"/>Followed @BoredElonMusk?</label></li>
-            <li><label><input type="checkbox"/>Followed @VCBrags?</label></li>
-            <li><label><input type="checkbox"/>Followed @RampCapitalLLC?</label></li>
-            <li><label><input type="checkbox"/>Followed @vcstarterkit?</label></li>
-            <li><label><input type="checkbox"/>Followed @startupsearch?</label></li>
-            <li><label><input type="checkbox"/>Binge-scrolled an @opensea Friday NFT drop?</label></li>
-            <li><label><input type="checkbox"/>Binge-scrolled @launchhouse?</label></li>
-            <li><label><input type="checkbox"/>Binge-scrolled @PartyRound?</label></li>
-            <li><label><input type="checkbox"/>Tweeted customer support on Twitter?</label></li>
-            <li><label><input type="checkbox"/>Tweeted an iteration of web1: _____, web2: _____ , web3: _____</label>
+            <li><label><input type="checkbox" class="question-checkbox"/>Had someone with more than 100k followers <b>reply</b> to you?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Had someone with more than 1M followers <b>reply</b> to you?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Had someone with more than 100k followers <b>follow</b> you?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Had someone with more than 1M followers <b>follow</b> you?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Asked for book recommendations on Twitter?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Asked for podcast recommendations on Twitter?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Use a tweet bookmarking bot?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Subscribed to a newsletter from Twitter?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Followed <a href="https://twitter.com/pmarca" target="_blank">@pmarca</a>?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Followed <a href="https://twitter.com/zebulgar" target="_blank">@zebulgar</a>?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Followed <a href="https://twitter.com/paulg" target="_blank">@paulg</a>?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Followed <a href="https://twitter.com/packyM" target="_blank">@packyM</a>?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Followed <a href="https://twitter.com/balajis" target="_blank">@balajis</a>?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Joined a DAO through Twitter?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Met someone IRL from Twitter?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Went to an IRL event you found on Twitter?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Tweeted a photo of an IRL gathering?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Tweeted about Miami Hack Week?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Tweeted about ETH Denver?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Tweeted about NFT LA?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Dropped your ENS on an airdrop Tweet?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Received an NFT from an airdrop Tweet?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Part of a Twitter community?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Started a Twitter community?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Created a Twitter list?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Been added to a Twitter list?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Been added to 5+ Twitter lists?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Followed <a href="https://twitter.com/BoredElonMusk" target="_blank">@BoredElonMusk</a>?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Followed <a href="https://twitter.com/VCBrags" target="_blank">@VCBrags</a>?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Followed <a href="https://twitter.com/RampCapitalLLC" target="_blank">@RampCapitalLLC</a>?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Followed <a href="https://twitter.com/vcstarterkit" target="_blank">@vcstarterkit</a>?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Followed <a href="https://twitter.com/startupsearch" target="_blank">@startupsearch</a>?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Binge-scrolled an <a href="https://twitter.com/opensea" target="_blank">@opensea</a> Friday NFT drop?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Binge-scrolled <a href="https://twitter.com/launchhouse" target="_blank">@launchhouse</a>?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Binge-scrolled <a href="https://twitter.com/PartyRound" target="_blank">@PartyRound</a>?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Tweeted customer support on Twitter?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Tweeted an iteration of web1: _____, web2: _____ , web3: _____</label>
             </li>
-            <li><label><input type="checkbox"/>Tweeted “Who’s building ____ for ____?”</label></li>
-            <li><label><input type="checkbox"/>Tweeted “Hosting___, who wants an invite?”</label></li>
-            <li><label><input type="checkbox"/>Tweeted “Here are X things I learned:”?</label></li>
-            <li><label><input type="checkbox"/>Tweeted “Building something new?”</label></li>
-            <li><label><input type="checkbox"/>Built something in public?</label></li>
-            <li><label><input type="checkbox"/>Followed @dunkhippo33?</label></li>
-            <li><label><input type="checkbox"/>Followed @lolitataub?</label></li>
-            <li><label><input type="checkbox"/>Followed @gaby_goldberg?</label></li>
-            <li><label><input type="checkbox"/>Followed @lucy_guo?</label></li>
-            <li><label><input type="checkbox"/>Followed @ljin18?</label></li>
-            <li><label><input type="checkbox"/>Listened to a Twitter Space?</label></li>
-            <li><label><input type="checkbox"/>Hosted a Twitter Space?</label></li>
-            <li><label><input type="checkbox"/>Speaker at a Twitter Space?</label></li>
-            <li><label><input type="checkbox"/>Found a job through Twitter?</label></li>
-            <li><label><input type="checkbox"/>Announced your job transition on Twitter?</label></li>
-            <li><label><input type="checkbox"/>Announced a company fundraise on Twitter?</label></li>
-            <li><label><input type="checkbox"/>Found housing through Twitter?</label></li>
-            <li><label><input type="checkbox"/>Tweeted a job description on Twitter?</label></li>
-            <li><label><input type="checkbox"/>Hired someone from Twitter?</label></li>
-            <li><label><input type="checkbox"/>Went on a date with someone from Twitter?</label></li>
-            <li><label><input type="checkbox"/>DM’d your favorite thought leader?</label></li>
-            <li><label><input type="checkbox"/>Have been called a thought leader?</label></li>
-            <li><label><input type="checkbox"/>Know who @FrancisSuarez is?</label></li>
-            <li><label><input type="checkbox"/>Spotted a “I’m 10 years old, and I just made 30k on an NFT”
+            <li><label><input type="checkbox" class="question-checkbox"/>Tweeted “Who’s building ____ for ____?”</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Tweeted “Hosting___, who wants an invite?”</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Tweeted “Here are X things I learned:”?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Tweeted “Building something new?”</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Built something in public?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Followed <a href="https://twitter.com/dunkhippo33" target="_blank">@dunkhippo33</a>?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Followed <a href="https://twitter.com/lolitataub" target="_blank">@lolitataub</a>?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Followed <a href="https://twitter.com/gaby_goldberg" target="_blank">@gaby_goldberg</a>?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Followed <a href="https://twitter.com/lucy_guo" target="_blank">@lucy_guo</a>?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Followed <a href="https://twitter.com/ljin18" target="_blank">@ljin18</a>?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Listened to a Twitter Space?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Hosted a Twitter Space?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Speaker at a Twitter Space?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Found a job through Twitter?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Announced your job transition on Twitter?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Announced a company fundraise on Twitter?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Found housing through Twitter?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Tweeted a job description on Twitter?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Hired someone from Twitter?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Went on a date with someone from Twitter?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>DM’d your favorite thought leader?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Have been called a thought leader?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Know who <a href="https://twitter.com/FrancisSuarez" target="_blank">@FrancisSuarez</a> is?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Spotted a “I’m 10 years old, and I just made 30k on an NFT”
                 tweet?</label></li>
-            <li><label><input type="checkbox"/>Responded to Sam Altman’s “I think US college education is nearer to
+            <li><label><input type="checkbox" class="question-checkbox"/>Responded to Sam Altman’s “I think US college education is nearer to
                 collapsing” tweet?</label></li>
-            <li><label><input type="checkbox"/>Responded to Ryan Breslow’s “Stripe and YCombinator, the Mob Bosses of
+            <li><label><input type="checkbox" class="question-checkbox"/>Responded to Ryan Breslow’s “Stripe and YCombinator, the Mob Bosses of
                 Silicon Valley” tweet?</label></li>
-            <li><label><input type="checkbox"/>Responded to Paul Graham’s “Classes in "entrepreneurship" in college is
+            <li><label><input type="checkbox" class="question-checkbox"/>Responded to Paul Graham’s “Classes in "entrepreneurship" in college is
                 like going to the Louvre and spending your time looking at the floor” tweet?</label></li>
-            <li><label><input type="checkbox"/>Responded to the original Bain Capital Crypto announcement tweet?</label>
+            <li><label><input type="checkbox" class="question-checkbox"/>Responded to the original Bain Capital Crypto announcement tweet?</label>
             </li>
-            <li><label><input type="checkbox"/>Tweeted complaints about YCombinator terms?</label></li>
-            <li><label><input type="checkbox"/>Received a reply from @TurnerNovak 🍌🧢 ?</label></li>
-            <li><label><input type="checkbox"/>Got into a fight with Keith Rabois (@rabois)?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Tweeted complaints about YCombinator terms?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Received a reply from <a href="https://twitter.com/TurnerNovak" target="_blank">@TurnerNovak</a> 🍌🧢 ?</label></li>
+            <li><label><input type="checkbox" class="question-checkbox"/>Got into a fight with Keith Rabois (<a href="https://twitter.com/rabois" target="_blank">@rabois</a>)?</label></li>
         </ul>
-        <button type="button">Calculate my score</button>
+        <br>
+        <button type="button" onclick="calculateScore()">Calculate my score</button>
     </form>
 </div>
+<script>
+    const checkboxes = document.getElementsByClassName("question-checkbox")
+    function calculateScore() {
+        let count = 100
+        for (let i = 0; i < 100; i++) {
+            if (checkboxes[i].checked)
+                count--
+        }
+        alert(count)
+    }
+</script>
 </body>
 </html>

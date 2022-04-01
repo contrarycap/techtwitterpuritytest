@@ -1,8 +1,32 @@
 body {
-    background: linear-gradient(1.37deg, #E4ECF7 5.18%, #FFFFFF 97.66%);
     font-family: "Work Sans", sans-serif;
+    color: #0D0E29;
+    background: url("/grey-topology.svg") no-repeat center bottom, linear-gradient(1.37deg, #E4ECF7 5.18%, #FFFFFF 97.66%);
+    background-size: contain;
+    padding-bottom: 130px;
 }
 
 .header {
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+}
+
+.header .description {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+}
+
+.questions button {
+    margin-left: 30px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+li {
+    margin-bottom: 8px;
 }
