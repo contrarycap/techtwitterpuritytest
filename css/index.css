@@ -70,3 +70,28 @@ li {
     color: red;
     font-size: 36px;
 }
+
+.twitter-button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #00ACEE;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.twitter-button:hover {
+    background-color: #0294ce;
+}
+
+.twitter-button img {
+    margin-right: 4px;
+}
