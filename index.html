@@ -208,7 +208,12 @@
         ;if(!Object.prototype.hasOwnProperty.call(n._iq,e)){n._iq[e]={_q:[]};v(n._iq[e])
     }return n._iq[e]};e.amplitude=n})(window,document);
 
-    amplitude.getInstance().init("8733a50eb634293763dca8ea18bd2b94");
+    amplitude.getInstance().init("8733a50eb634293763dca8ea18bd2b94", null, {
+        includeUtm: true,
+        includeGclid: true,
+        includeFbclid: true,
+        includeReferrer: true
+    });
 
     function sendAmplitudeEvent(eventName, properties) {
             amplitude.getInstance().logEvent(eventName, properties)
@@ -371,6 +376,7 @@
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 <script>
+    sendAmplitudeEvent("PageView - Purity Test")
     const checkboxes = document.getElementsByClassName("question-checkbox")
     const entryScreen = document.getElementById("entry-screen")
     const results = document.getElementById("results")
@@ -381,6 +387,9 @@
             if (checkboxes[i].checked)
                 count--
         }
+        sendAmplitudeEvent("Submit - Purity Test", {
+            score: score
+        })
         score.innerText = count.toString()
         entryScreen.style.display = "none"
         results.style.display = "block"
