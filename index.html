@@ -405,6 +405,7 @@
     const resultsTwitterButton = document.getElementById("results-twitter-button")
     const emailCaptureOverlay = document.getElementById("email-capture-overlay")
     const emailCaptureInput = document.getElementById("email-capture-input")
+    let isLoggedIn = false
 
     function calculateScore() {
         let count = 100
@@ -420,7 +421,9 @@
             encodeURI("My Tech Twitter Purity Test score is " + count + ". Should I be proud or embarrassed? @startupsearch")
         entryScreen.style.display = "none"
         results.style.display = "block"
-        emailCaptureOverlay.classList.remove("hidden")
+        if (!isLoggedIn) {
+            emailCaptureOverlay.classList.remove("hidden")
+        }
     }
 
     function submitForm() {
@@ -439,6 +442,15 @@
         if (this.event.target === emailCaptureOverlay)
             emailCaptureOverlay.classList.add("hidden")
     }
+
+    (function() {
+        fetch("https://startupsearch.com/logged_in")
+            .then(response => response.json())
+            .then((data) => {
+                console.log(data)
+                isLoggedIn = data["exists"]
+            })
+    })()
 </script>
 </body>
 </html>
