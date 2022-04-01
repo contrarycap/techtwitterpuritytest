@@ -355,6 +355,9 @@
 </div>
 <div class="results" id="results" style="display: none;">
 Your score:<br><span id="score"></span>
+<a class="twitter-share-button"
+   href="https://twitter.com/intent/tweet?text=What%20should%20our%20default%20tweet%20be">
+    Tweet</a>
 </div>
 <script>
     const checkboxes = document.getElementsByClassName("question-checkbox")
@@ -372,5 +375,21 @@ Your score:<br><span id="score"></span>
         results.style.display = "block"
     }
 </script>
+<script>window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+
+    t._e = [];
+    t.ready = function(f) {
+        t._e.push(f);
+    };
+
+    return t;
+}(document, "script", "twitter-wjs"));</script>
 </body>
 </html>

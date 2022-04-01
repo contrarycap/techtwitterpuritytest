@@ -5,7 +5,7 @@ html {
 body {
     font-family: "Work Sans", sans-serif;
     color: #0D0E29;
-    background: url("/grey-topology.svg") no-repeat center bottom, linear-gradient(1.37deg, #E4ECF7 5.18%, #FFFFFF 97.66%);
+    background: url("/grey-topology.svg") no-repeat center bottom, #c8e6ff;
     background-size: contain;
     padding-bottom: 130px;
 }
