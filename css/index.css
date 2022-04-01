@@ -95,3 +95,16 @@ li {
 .twitter-button img {
     margin-right: 4px;
 }
+
+.divider {
+    content: "";
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    border-top: 1px solid rgb(0 0 0 / 30%);
+}
+
+.cta-copy {
+    font-size: 16px;
+    line-height: 140%;
+}

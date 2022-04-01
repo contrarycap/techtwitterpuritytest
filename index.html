@@ -247,6 +247,7 @@
     <br><br>
     <b>NOTE: The Tech Twitter Purity Test is not a bucket list. Completion of all items on this test will likely result
         in being blocked by <a href="https://twitter.com/pmarca" target="_blank">@pmarca</a>.</b>
+    <br><br><a href="https://twitter.com/intent/tweet?text=How%20pure%20is%20your%20Twitter%20feed%3F%20Find%20out%20with%20the%20Tech%20Twitter%20Purity%20Test%20by%20%40startupsearch&related=startupsearch&url=https%3A%2F%2Ftechtwitterpuritytest.com" class="twitter-button" target="_blank"><img src="img/twitter.svg" alt=""> Share on Twitter</a>
     </div>
 </div>
 <div class="questions">
@@ -372,8 +373,12 @@
     <img src="img/header_img.png" alt="Tech Twitter Purity Test by Startup Search" class="results-image">
     <br>Your score:<br>
     <span id="score"></span>
-<br><br>
-<a href="https://twitter.com/intent/tweet?text=hi&related=startupsearch" class="twitter-button"><img src="img/twitter.svg" alt=""> Share on Twitter</a>
+    <br><br>
+    <a href="https://twitter.com/intent/tweet?text=&via=startupsearch&url=https%3A%2F%2Ftechtwitterpuritytest.com" class="twitter-button" id="results-twitter-button" target="_blank"><img src="img/twitter.svg" alt=""> Share on Twitter</a>
+    <div class="divider"></div>
+    <div class="cta-copy">
+        Looking for a job or internship in tech? Subscribe to Startup Search, a weekly newsletter curating...
+    </div>
 </div>
 <script>
     sendAmplitudeEvent("PageView - Purity Test")
@@ -381,6 +386,8 @@
     const entryScreen = document.getElementById("entry-screen")
     const results = document.getElementById("results")
     const score = document.getElementById("score")
+    const resultsTwitterButton = document.getElementById("results-twitter-button")
+
     function calculateScore() {
         let count = 100
         for (let i = 0; i < 100; i++) {
@@ -391,6 +398,8 @@
             score: score
         })
         score.innerText = count.toString()
+        resultsTwitterButton.href = "https://twitter.com/intent/tweet?&url=https%3A%2F%2Ftechtwitterpuritytest.com&related=startupsearch&text=" +
+            encodeURI("My Tech Twitter Purity Test score is " + count + ". Should I be proud or embarrassed? @startupsearch")
         entryScreen.style.display = "none"
         results.style.display = "block"
     }
