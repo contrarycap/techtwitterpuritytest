@@ -444,7 +444,7 @@
     }
 
     (function() {
-        fetch("https://startupsearch.com/logged_in")
+        fetch("https://startupsearch.com/logged_in", { credentials: "include" })
             .then(response => response.json())
             .then((data) => {
                 console.log(data)
